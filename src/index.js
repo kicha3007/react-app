@@ -1,9 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-// import App from './App';
-import MainForm from './components/MainForm/MainForm';
+
+
+import MainForm from './components/MainForm';
 import * as serviceWorker from './serviceWorker';
+
+
+
 
 // ReactDOM.render(<App />, document.getElementById('root'));
 ReactDOM.render(<MainForm />, document.getElementById('root'));
