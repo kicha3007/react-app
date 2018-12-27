@@ -5,16 +5,8 @@
     <bookmark url="file://$PROJECT_DIR$/src/components/MainForm/index.js" line="165" mnemonic="1" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="22130904-950f-46f0-adf7-68d5e82af5ed" name="Default Changelist" comment="add select">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/Button/img/aero.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/Button/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/MainPage/index.js" />
+    <list default="true" id="22130904-950f-46f0-adf7-68d5e82af5ed" name="Default Changelist" comment="start state">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/MainForm/ChangeButton/index.js" afterPath="$PROJECT_DIR$/src/components/MainForm/ChangeButton/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/MainForm/DateChange/index.js" afterPath="$PROJECT_DIR$/src/components/MainForm/DateChange/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/MainForm/index.js" afterPath="$PROJECT_DIR$/src/components/MainForm/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/index.css" afterPath="$PROJECT_DIR$/src/index.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/index.js" afterPath="$PROJECT_DIR$/src/index.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -529,7 +521,7 @@
       <workItem from="1545624778415" duration="916000" />
       <workItem from="1545625722988" duration="13955000" />
       <workItem from="1545793554922" duration="973000" />
-      <workItem from="1545798708097" duration="57701000" />
+      <workItem from="1545798708097" duration="57714000" />
     </task>
     <task id="LOCAL-00001" summary="add options">
       <created>1545887875487</created>
@@ -545,11 +537,18 @@
       <option name="project" value="LOCAL" />
       <updated>1545905937661</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="start state">
+      <created>1545912873302</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1545912873302</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="74169000" />
+    <option name="totallyTimeSpent" value="74182000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -586,7 +585,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add options" />
     <MESSAGE value="add select" />
-    <option name="LAST_COMMIT_MESSAGE" value="add select" />
+    <MESSAGE value="start state" />
+    <option name="LAST_COMMIT_MESSAGE" value="start state" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
