@@ -1,12 +1,15 @@
 import React from "react";
 import styled from 'styled-components';
 import Icon from "../Icon";
-import Input from "/Input";
+import Input from "./Input";
+import OptionsPassanger from "./OptionsPassanger";
+import ChangeButton from "./ChangeButton";
 import  {media}  from "../../mixin";
 
+import arrow from "./ChangeButton/img/arrow.png";
 import icon from "../Icon/icon.png";
 
-const MainFormSection = styled.section` 
+const MainFormSection = styled.section`  
       background-color: #00b0de;
       background: linear-gradient( 
           148.48deg, 
@@ -83,7 +86,7 @@ const MainFormInputWrap = styled.form`
 `;
 
 const MainFormHalf = styled.div`
-    flex-grow: 1;
+  flex-grow: 1;
   flex-basis: 120px;
   width: 100%;
   margin: 0 1px 2px;
@@ -98,10 +101,8 @@ import  {media}  from "../../mixin";
     max-width: 308px;
     flex-basis: 265px;
   `}
+
 `
-
-
-
 
 class MainForm extends React.Component {
     render() {
@@ -120,26 +121,42 @@ class MainForm extends React.Component {
                             <MainFormInputWrap>
                                 <MainFormHalf>
                                     <Input
-                                        className="it-main-form__input it-main-form__input--color-1 it-main-form__input--border-desktop-1"  data-it-city-from="" />
-                                    <div className="it-main-form__city-change" data-it-change-city>
-                                        <div className="it-main-form__city-change-text"> MOW</div>
-                                        <div className="it-main-form__city-change-img-box">
-                                            <img className="it-main-form__city-change-img"
-                                                 src="static/img/rbk/main-form/arrow.png" alt="" />
-                                        </div>
-                                    </div>
+                                        border="desktop-1"
+                                        type="text"
+                                        name="city-from"
+                                        maxlength="200"
+                                        value="Москва"
+                                        placeholder="Москва"
+                                        required
+                                    />
+                                    <ChangeButton
+                                        src={arrow}
+                                        alt="change-arrow"
+                                    />
                                 </MainFormHalf>
                                 <MainFormHalf className=" it-main-form__half--size-basis-2">
-                                    <Input className=" it-main-form__input--border-laptop-1"
-                                           type="text" name="city-to" maxlength="200" value="Тюмень"
-                                           placeholder="Город прибытия" required data-it-city-to="" />
+                                    <Input
+                                        border="laptop-1"
+                                        type="text"
+                                        name="city-to"
+                                        maxlength="200"
+                                        value="Тюмень"
+                                        placeholder="Город прибытия"
+                                        required
+                                    />
                                 </MainFormHalf>
                                 <MainFormHalf
-                                    className=" it-main-form__half--size-1 it-main-form__half--size-basis-1">
+                                    className="it-main-form__half--size-1 it-main-form__half--size-basis-1">
                                     <Input
-                                        className=" it-main-form__input--border-laptop-2 datepicker-here"
-                                        id="city-to" type="text" name="time-to" maxlength="200" value=""
-                                        placeholder="Туда" required />
+                                        className="datepicker-here"
+                                        border="laptop-2"
+                                        type="text"
+                                        name="time-to"
+                                        id="city-to"
+                                        maxlength="200"
+                                        placeholder="Туда"
+                                        required
+                                        />
                                     <label className="it-main-form__date-change" for="city-to">
                                         <div className="it-main-form__date-change-img-box">
                                             <img className="it-main-form__city-change-img"
@@ -149,8 +166,15 @@ class MainForm extends React.Component {
                                 </MainFormHalf>
                                 <MainFormHalf
                                     className=" it-main-form__half--size-1 it-main-form__half--size-basis-1">
-                                    <Input className=" datepicker-here" id="city-from" type="text"
-                                           name="time-back" maxlength="200" value="" placeholder="Обратно" required />
+                                    <Input
+                                        className="datepicker-here"
+                                        type="text"
+                                        name="time-back"
+                                        id="city-from"
+                                        maxlength="200"
+                                        placeholder="Обратно"
+                                        required
+                                    />
                                     <label className="it-main-form__date-change" for="city-from">
                                         <div className="it-main-form__date-change-img-box">
                                             <img className="it-main-form__city-change-img"
@@ -158,43 +182,8 @@ class MainForm extends React.Component {
                                         </div>
                                     </label >
                                 </MainFormHalf>
-                                <MainFormHalf className=" it-main-form__half--size-2">
-                                    <div className="it-main-form__passanger-wrap">
-                                        <div className="it-main-form__passanger-input-wrap" tabindex="1" />
-                                        <input className="it-main-form__passanger-selectopt" id="opt1" name="test"
-                                               type="radio" checked="" />
-                                        <label
-                                            className="it-main-form__passanger-label it-main-form__passanger-label--border-desktop-1"
-                                            for="opt1"><span className="it-main-form__passanger-text">1 пассажир,</span><span
-                                            className="it-main-form__passanger-text it-main-form__passanger-text--color">	эконом</span>
-                                        </label>
-                                        <input className="it-main-form__passanger-selectopt" id="opt2" name="test"
-                                               type="radio" />
-                                        <label
-                                            className="it-main-form__passanger-label it-main-form__passanger-label--border-desktop-1"
-                                            for="opt2"><span
-                                            className="it-main-form__passanger-text">2 пассажира,</span><span
-                                            className="it-main-form__passanger-text it-main-form__passanger-text--color"></span>
-                                            эконом
-                                        </label>
-                                        <input className="it-main-form__passanger-selectopt" id="opt3" name="test"
-                                               type="radio" />
-                                        <label
-                                            className="it-main-form__passanger-label it-main-form__passanger-label--border-desktop-1"
-                                            for="opt3"><span className="it-main-form__passanger-text">1 пассажир,</span><span
-                                            className="it-main-form__passanger-text it-main-form__passanger-text--color"></span>
-                                            бизнес
-                                        </label>
-                                        <input className="it-main-form__passanger-selectopt" id="opt4" name="test"
-                                               type="radio" />
-                                        <label
-                                            className="it-main-form__passanger-label it-main-form__passanger-label--border-desktop-1"
-                                            for="opt4"><span
-                                            className="it-main-form__passanger-text">2 пассажира,</span><span
-                                            className="it-main-form__passanger-text it-main-form__passanger-text--color"></span>
-                                            бизнес
-                                        </label>
-                                    </div>
+                                <MainFormHalf className="it-main-form__half--size-2">
+                                    <OptionsPassanger/>
                                 </MainFormHalf>
                             </MainFormInputWrap>
 
