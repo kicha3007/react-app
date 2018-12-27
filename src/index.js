@@ -1,11 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import MainPage from './components/MainPage';
 
-import MainForm from './components/MainForm';
+
 import * as serviceWorker from './serviceWorker';
 
 
-ReactDOM.render(<MainForm />, document.getElementById('root'));
+ReactDOM.render(<MainPage />, document.getElementById('root'));
 
 serviceWorker.unregister();

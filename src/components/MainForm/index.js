@@ -8,8 +8,10 @@ import ChangeButton from "./ChangeButton";
 import  {media}  from "../../mixin";
 import  {passangersData}  from "./ChangeButton/data/";
 
+import {Button} from "../Button";
 import arrow from "./ChangeButton/img/arrow.png";
 import icon from "../Icon/icon.png";
+import aero from "../Button/img/aero.png";
 import  dateImg  from "./DateChange/img/date.png";
 
 
@@ -23,7 +25,9 @@ const MainFormSection = styled.section`
           #02abdb 29.89%, 
           #02abdb 33.59%, 
           #02abdb 33.81%,  
-          #196ebd 122.26% )
+          #196ebd 122.26% );
+      padding-top: 12px;
+      margin-bottom: 65px;
 `;
 
 const MainFormWrap = styled.div`
@@ -38,7 +42,7 @@ const MainFormWrap = styled.div`
 `;
 
 const MainFormTitle = styled.h1`
-  font-size: rem(40px);
+  font-size: 40px;
   margin-top: 0;
   margin-bottom: 5px;
   text-align: center;
@@ -126,11 +130,25 @@ const MainFormHalf = styled.div`
     max-width: 180px;
   }
   
+`
 
+const MainFormButtonWrap = styled.div`
+      text-align: center;
+`
+
+const MainFormButtons = styled.div`
+      display: inline-block;
+      max-width: 308px;
+      width: 100%;
 `
 
 
+
 class MainForm extends React.Component {
+/*    state
+    handleChangeCity = () {
+
+}*/
     render() {
         return (
             <MainFormSection>
@@ -157,7 +175,7 @@ class MainForm extends React.Component {
                                     />
                                     <ChangeButton
                                         src={arrow}
-                                        alt="change-arrow"
+                                        alt="change-arrow" onClick={this.handleChangeCity}
                                     />
                                 </MainFormHalf>
                                 <MainFormHalf className="size-basis-2">
@@ -205,17 +223,11 @@ class MainForm extends React.Component {
                             </MainFormInputWrap>
 
 
-                            <div className="it-main-form__buttons-wrap">
-                                <div className="it-main-form__buttons">
-                                    <button className="it-btn it-main-form__btn"><span
-                                        className="it-main-form__btn-text">	Найти билеты</span>
-                                        <div className="it-main-form__btn-img-box">
-                                            <img className="it-main-form__btn-img"
-                                                 src="static/img/rbk/main-form/aero.png" alt="" />
-                                        </div>
-                                    </button>
-                                </div>
-                            </div>
+                            <MainFormButtonWrap>
+                                <MainFormButtons>
+                                     <Button src={aero} alt="aero-btn" mod="mainForm" btnText="Найти билеты"  />
+                                </MainFormButtons>
+                            </MainFormButtonWrap>
 
 
 
