@@ -29,7 +29,7 @@ const MainFormInput = styled.input`
               `}
            `} 
            
-       ${props => props.border === "laptop-2" && css`
+   ${props => props.border === "laptop-2" && css`
       ${media.tablets`
             border-bottom-left-radius: 5px;
       `}
@@ -38,9 +38,25 @@ const MainFormInput = styled.input`
       `}
    `} 
    
+&::-webkit-input-placeholder {
+  color: #A0B0B9;
+}
+
+&::-moz-placeholder {
+  color: #A0B0B9;
+}
+
+&:-ms-input-placeholder {
+  color: #A0B0B9;
+}
+
+&:-moz-placeholder {
+  color: #A0B0B9;
+   
+   
+   
 
     
- 
 `
 
 class Input extends React.Component {
@@ -51,7 +67,7 @@ class Input extends React.Component {
                 name={this.props.name}
                 id={this.props.id}
                 maxlength={this.props.maxlength}
-                value={this.props.value}
+                defaultValue={this.props.value}
                 placeholder={this.props.placeholder}
                 required={this.props.required}
                 border={this.props.border}

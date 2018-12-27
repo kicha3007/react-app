@@ -1,13 +1,18 @@
 import React from "react";
 import styled from 'styled-components';
 import Icon from "../Icon";
+import DateChange from "./DateChange";
 import Input from "./Input";
 import OptionsPassanger from "./OptionsPassanger";
 import ChangeButton from "./ChangeButton";
 import  {media}  from "../../mixin";
+import  {passangersData}  from "./ChangeButton/data/";
 
 import arrow from "./ChangeButton/img/arrow.png";
 import icon from "../Icon/icon.png";
+import  dateImg  from "./DateChange/img/date.png";
+
+
 
 const MainFormSection = styled.section`  
       background-color: #00b0de;
@@ -63,7 +68,7 @@ const MainFormSubtitle = styled.h2`
 const MainFormMain = styled.form`
     box-sizing: content-box;
 `
-const MainFormInputWrap = styled.form`
+const MainFormInputWrap = styled.div`
     display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -95,14 +100,35 @@ const MainFormHalf = styled.div`
   ${media.tablets`
     max-width: calc(50% - 1px);
     flex-basis: 265px;
-import  {media}  from "../../mixin";
   `}
   ${media.phone`
     max-width: 308px;
     flex-basis: 265px;
   `}
+  
+  &.size-basis-1 {
+    flex-basis: 110px;
+  ${media.tablets`
+    max-width: calc(25% - 2px);
+    flex-basis: 138px;
+  `}
+  ${media.phone`
+    max-width: 152px;
+    flex-basis: 90px;
+  `}
+  }
+  
+  &.size-basis-2 {
+    flex-basis: 150px;
+  }
+  
+  &.size-1 {
+    max-width: 180px;
+  }
+  
 
 `
+
 
 class MainForm extends React.Component {
     render() {
@@ -126,7 +152,7 @@ class MainForm extends React.Component {
                                         name="city-from"
                                         maxlength="200"
                                         value="Москва"
-                                        placeholder="Москва"
+                                        placeholder="Откуда"
                                         required
                                     />
                                     <ChangeButton
@@ -134,7 +160,7 @@ class MainForm extends React.Component {
                                         alt="change-arrow"
                                     />
                                 </MainFormHalf>
-                                <MainFormHalf className=" it-main-form__half--size-basis-2">
+                                <MainFormHalf className="size-basis-2">
                                     <Input
                                         border="laptop-1"
                                         type="text"
@@ -146,7 +172,7 @@ class MainForm extends React.Component {
                                     />
                                 </MainFormHalf>
                                 <MainFormHalf
-                                    className="it-main-form__half--size-1 it-main-form__half--size-basis-1">
+                                    className="size-1 size-basis-1">
                                     <Input
                                         className="datepicker-here"
                                         border="laptop-2"
@@ -157,15 +183,11 @@ class MainForm extends React.Component {
                                         placeholder="Туда"
                                         required
                                         />
-                                    <label className="it-main-form__date-change" for="city-to">
-                                        <div className="it-main-form__date-change-img-box">
-                                            <img className="it-main-form__city-change-img"
-                                                 src="static/img/rbk/main-form/date.png" alt="" />
-                                        </div>
-                                    </label>
+                                    <DateChange src={dateImg} alt="date" htmlFor="city-to"/>
+
                                 </MainFormHalf>
                                 <MainFormHalf
-                                    className=" it-main-form__half--size-1 it-main-form__half--size-basis-1">
+                                    className="size-1 size-basis-1">
                                     <Input
                                         className="datepicker-here"
                                         type="text"
@@ -175,15 +197,10 @@ class MainForm extends React.Component {
                                         placeholder="Обратно"
                                         required
                                     />
-                                    <label className="it-main-form__date-change" for="city-from">
-                                        <div className="it-main-form__date-change-img-box">
-                                            <img className="it-main-form__city-change-img"
-                                                 src="static/img/rbk/main-form/date.png" alt="" />
-                                        </div>
-                                    </label >
+                                    <DateChange src={dateImg} alt="date" htmlFor="city-from"/>
                                 </MainFormHalf>
-                                <MainFormHalf className="it-main-form__half--size-2">
-                                    <OptionsPassanger/>
+                                <MainFormHalf className="size-2">
+                                    <OptionsPassanger data={passangersData} tabIndex="1"/>
                                 </MainFormHalf>
                             </MainFormInputWrap>
 
