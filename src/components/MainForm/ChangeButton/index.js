@@ -45,16 +45,18 @@ const CityChangeImg = styled.img`
 `
 
 
-const ChangeButton = (props) => {
+class ChangeButton extends React.Component  {
+    render () {
     return (
-        <CityChange>
+        <CityChange onClick={this.props.handleChangeCityProp}>
             <CityChangeText> MOW</CityChangeText>
             <CityChangeImgBox>
                 <CityChangeImg
-                     src={props.src} alt={props.alt} />
+                     src={this.props.src} alt={this.props.alt} />
             </CityChangeImgBox>
         </CityChange>
     );
+    }
 }
 
 

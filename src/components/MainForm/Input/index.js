@@ -53,10 +53,6 @@ const MainFormInput = styled.input`
 &:-moz-placeholder {
   color: #A0B0B9;
    
-   
-   
-
-    
 `
 
 class Input extends React.Component {
@@ -71,6 +67,7 @@ class Input extends React.Component {
                 placeholder={this.props.placeholder}
                 required={this.props.required}
                 border={this.props.border}
+                ref={this.props.inputRef}
             />
         )
 

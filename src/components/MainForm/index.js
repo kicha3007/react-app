@@ -142,14 +142,36 @@ const MainFormButtons = styled.div`
       width: 100%;
 `
 
-
-
 class MainForm extends React.Component {
-/*    state
-    handleChangeCity = () {
+    constructor (props) {
+        super(props);
+      this.state = {
+            cityfromvalue: "Москва",
+            citytovalue: "Тюмень"
+        }
 
-}*/
+        this.handleChangeCity = this.handleChangeCity.bind(this);
+        this.inputCityFrom = React.createRef();
+        this.inputCityTo = React.createRef();
+}
+
+
+
+    handleChangeCity = () => {
+        const inputCityFromValue = this.inputCityFrom.value;
+        const inputCityToValue = this.inputCityTo.value;
+
+        this.setState({cityfromvalue: inputCityToValue});
+        this.setState({citytovalue: inputCityFromValue});
+
+        this.inputCityFrom.value = inputCityToValue;
+        this.inputCityTo.value = inputCityFromValue;
+
+    }
+
     render() {
+
+
         return (
             <MainFormSection>
                 <div className="it-container it-container--big">
@@ -159,23 +181,28 @@ class MainForm extends React.Component {
                 <div className="it-container">
                     <MainFormWrap>
                         <MainFormTitle> Поиск дешевых авиабилетов</MainFormTitle>
-                        <MainFormSubtitle className="it-all--hide-mobile"> Лучший способ купить авиабилеты
-                                                                                   дешево</MainFormSubtitle>
+                        <MainFormSubtitle className="it-all--hide-mobile">
+                             "Лучший способ купить авиабилеты дешево"
+                        </MainFormSubtitle>
                         <MainFormMain action="" method="post">
                             <MainFormInputWrap>
-                                <MainFormHalf>
+                                <MainFormHalf >
                                     <Input
                                         border="desktop-1"
                                         type="text"
                                         name="city-from"
                                         maxlength="200"
-                                        value="Москва"
+                                        value={this.state.cityfromvalue}
                                         placeholder="Откуда"
                                         required
+                                        id="city-from"
+                                        inputRef={el => (this.inputCityFrom = el)}
                                     />
                                     <ChangeButton
                                         src={arrow}
-                                        alt="change-arrow" onClick={this.handleChangeCity}
+                                        alt="change-arrow"
+                                        handleChangeCityProp={this.handleChangeCity}
+
                                     />
                                 </MainFormHalf>
                                 <MainFormHalf className="size-basis-2">
@@ -184,7 +211,8 @@ class MainForm extends React.Component {
                                         type="text"
                                         name="city-to"
                                         maxlength="200"
-                                        value="Тюмень"
+                                        value={this.state.citytovalue}
+                                        inputRef={el => (this.inputCityTo = el)}
                                         placeholder="Город прибытия"
                                         required
                                     />
