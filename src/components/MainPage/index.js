@@ -2,6 +2,7 @@ import React from 'react';
 import styled  from 'styled-components';
 import  {media}  from "../../mixin";
 import MainForm from '../MainForm';
+import Tabs from '../Tabs';
 
 const MainPageWrapper = styled.div`
     background-color: rgba(249, 252, 255, 1);
@@ -32,6 +33,19 @@ class MainPage extends React.Component {
             <MainPageWrapper>
                 <MainPageContent>
                     <MainForm/>
+
+                    <Tabs
+                        activeTab={{
+                            id: "tab1"
+                        }}
+                    >
+                        <Tabs.Tab id="tab1" title="Tab 1">
+                            This is tab 1
+                        </Tabs.Tab>
+                        <Tabs.Tab id="tab2" title="Tab 2">
+                            This is tab 2
+                        </Tabs.Tab>
+                    </Tabs>
                 </MainPageContent>
             </MainPageWrapper>
         )
