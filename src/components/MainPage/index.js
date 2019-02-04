@@ -2,7 +2,7 @@ import React from 'react';
 import styled  from 'styled-components';
 import  {media}  from "../../mixin";
 import MainForm from '../MainForm';
-import Tabs from '../Tabs';
+import Tabs from '../TabsMain';
 
 const MainPageWrapper = styled.div`
     background-color: rgba(249, 252, 255, 1);
@@ -22,34 +22,125 @@ const MainPageContent = styled.div`
         /* IE10+ */
         background-image: linear-gradient(to bottom,rgb(248, 252, 255) 0%,rgb(255, 255, 255) 100%);
         background-image: -ms-linear-gradient(top,rgb(248, 252, 255) 0%,rgb(255, 255, 255) 100%);
-
 `
+
+const DataTabs = [
+    {
+        title: "Куда угодно",
+        tabContent: [
+                {
+                    img: "../Tabs/img/content/1.jpg'",
+                    city: "Краснодар",
+                    country: "Россия",
+                    price: "Найти от 1 212 ₽",
+                    date: "18 марта"
+                },
+                {
+                    img: "../Tabs/img/content/2.jpg'",
+                    city: "Сочи (Адлер)",
+                    country: "Россия",
+                    price: "Найти от 1 334 ₽",
+                    date: "18 марта"
+                },
+                {
+                    img: "../Tabs/img/content/3.jpg'",
+                    city: "Санкт-Петербург",
+                    country: "Россия",
+                    price: "Найти от 1 334 ₽",
+                    date: "18 марта"
+                },
+                {
+                    img: "../Tabs/img/content/4.jpg'",
+                    city: "Минеральные Воды",
+                    country: "Россия",
+                    price: "Найти от 1 334 ₽",
+                    date: "18 марта"
+                },
+                {
+                    img: "../Tabs/img/content/5.jpg'",
+                    city: "Симферополь (Крым)",
+                    country: "Россия",
+                    price: "Найти от 1 334 ₽",
+                    date: "13 марта"
+                },
+                {
+                    img: "../Tabs/img/content/6.jpg'",
+                    city: "Барселона",
+                    country: "ИСПАНИЯ",
+                    price: "Найти от 4 247 ₽",
+                    date: "24 марта"
+                },
+            ]
+
+
+    },
+
+    {
+        title: "CОЛНЦЕ И МОРЕ",
+        tabContent: [
+            {
+                img: "../Tabs/img/content/7.jpg'",
+                city: "Краснодар",
+                country: "Россия",
+                price: "Найти от 1 212 ₽",
+                date: "18 марта"
+            },
+            {
+                img: "../Tabs/img/content/8.jpg'",
+                city: "Сочи (Адлер)",
+                country: "Россия",
+                price: "Найти от 1 334 ₽",
+                date: "18 марта"
+            },
+            {
+                img: "../Tabs/img/content/9.jpg'",
+                city: "Санкт-Петербург",
+                country: "Россия",
+                price: "Найти от 1 334 ₽",
+                date: "18 марта"
+            },
+            {
+                img: "../Tabs/img/content/10.jpg'",
+                city: "Минеральные Воды",
+                country: "Россия",
+                price: "Найти от 1 334 ₽",
+                date: "18 марта"
+            },
+            {
+                img: "../Tabs/img/content/11.jpg'",
+                city: "Симферополь (Крым)",
+                country: "Россия",
+                price: "Найти от 1 334 ₽",
+                date: "13 марта"
+            },
+            {
+                img: "../Tabs/img/content/12.jpg'",
+                city: "Барселона",
+                country: "ИСПАНИЯ",
+                price: "Найти от 4 247 ₽",
+                date: "24 марта"
+            },
+        ]
+
+
+    },
+]
+
 
 
 class MainPage extends React.Component {
+
     render () {
         return (
 
             <MainPageWrapper>
                 <MainPageContent>
                     <MainForm/>
-
-                    <Tabs
-                        activeTab={{
-                            id: "tab1"
-                        }}
-                    >
-                        <Tabs.Tab id="tab1" title="Tab 1">
-                            This is tab 1
-                        </Tabs.Tab>
-                        <Tabs.Tab id="tab2" title="Tab 2">
-                            This is tab 2
-                        </Tabs.Tab>
-                    </Tabs>
+                    <Tabs titlehead={DataTabs}/>
                 </MainPageContent>
             </MainPageWrapper>
         )
-    };
+    }
 
 }
 
