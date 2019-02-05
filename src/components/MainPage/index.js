@@ -33,7 +33,7 @@ const DataTabs = [
                     img: "../Tabs/img/content/1.jpg'",
                     city: "Краснодар",
                     country: "Россия",
-                    price: "Найти от 1 212 ₽",
+                    price: "1 212 ₽",
                     date: "18 марта"
                 },
                 {
@@ -41,7 +41,7 @@ const DataTabs = [
                     img: "../Tabs/img/content/2.jpg'",
                     city: "Сочи (Адлер)",
                     country: "Россия",
-                    price: "Найти от 1 334 ₽",
+                    price: "1 334 ₽",
                     date: "18 марта"
                 },
                 {
@@ -49,7 +49,7 @@ const DataTabs = [
                     img: "../Tabs/img/content/3.jpg'",
                     city: "Санкт-Петербург",
                     country: "Россия",
-                    price: "Найти от 1 334 ₽",
+                    price: "1 334 ₽",
                     date: "18 марта"
                 },
                 {
@@ -57,7 +57,7 @@ const DataTabs = [
                     img: "../Tabs/img/content/4.jpg'",
                     city: "Минеральные Воды",
                     country: "Россия",
-                    price: "Найти от 1 334 ₽",
+                    price: "1 334 ₽",
                     date: "18 марта"
                 },
                 {
@@ -65,7 +65,7 @@ const DataTabs = [
                     img: "../Tabs/img/content/5.jpg'",
                     city: "Симферополь (Крым)",
                     country: "Россия",
-                    price: "Найти от 1 334 ₽",
+                    price: "1 334 ₽",
                     date: "13 марта"
                 },
                 {
@@ -73,7 +73,7 @@ const DataTabs = [
                     img: "../Tabs/img/content/6.jpg'",
                     city: "Барселона",
                     country: "ИСПАНИЯ",
-                    price: "Найти от 4 247 ₽",
+                    price: "4 247 ₽",
                     date: "24 марта"
                 },
             ]
@@ -87,49 +87,50 @@ const DataTabs = [
             {
                 id: "7",
                 img: "../Tabs/img/content/7.jpg'",
-                city: "Краснодар",
-                country: "Россия",
-                price: "Найти от 1 212 ₽",
-                date: "18 марта"
+                city: "ХЗ",
+                country: "Япония",
+                price: "1 212 ₽",
+                date: "18 марта",
+                flag: ""
             },
             {
                 id: "8",
                 img: "../Tabs/img/content/8.jpg'",
-                city: "Сочи (Адлер)",
-                country: "Россия",
-                price: "Найти от 1 334 ₽",
+                city: "ХЗ",
+                country: "Китай",
+                price: "1 334 ₽",
                 date: "18 марта"
             },
             {
                 id: "9",
                 img: "../Tabs/img/content/9.jpg'",
-                city: "Санкт-Петербург",
+                city: "ХЗ",
                 country: "Россия",
-                price: "Найти от 1 334 ₽",
+                price: "1 334 ₽",
                 date: "18 марта"
             },
             {
                 id: "10",
                 img: "../Tabs/img/content/10.jpg'",
-                city: "Минеральные Воды",
+                city: "ХЗ",
                 country: "Россия",
-                price: "Найти от 1 334 ₽",
+                price: "1 334 ₽",
                 date: "18 марта"
             },
             {
                 id: "11",
                 img: "../Tabs/img/content/11.jpg'",
-                city: "Симферополь (Крым)",
+                city: "ХЗ",
                 country: "Россия",
-                price: "Найти от 1 334 ₽",
+                price: "1 334 ₽",
                 date: "13 марта"
             },
             {
                 id: "12",
                 img: "../Tabs/img/content/12.jpg'",
-                city: "Барселона",
+                city: "ХЗ",
                 country: "ИСПАНИЯ",
-                price: "Найти от 4 247 ₽",
+                price: "4 247 ₽",
                 date: "24 марта"
             },
         ]
@@ -139,7 +140,6 @@ const DataTabs = [
 ]
 
 
-{console.log(DataTabs[1].tabContent)}
 class MainPage extends React.Component {
 
     render () {

@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="22130904-950f-46f0-adf7-68d5e82af5ed" name="Default Changelist" comment="start state">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/MainPage/index.js" afterPath="$PROJECT_DIR$/src/components/MainPage/index.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/TabsMain/index.js" afterPath="$PROJECT_DIR$/src/components/TabsMain/index.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -41,14 +41,14 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.12070006">
+    <splitter split-orientation="horizontal" split-proportion="0.49547374">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/components/MainPage/index.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="130">
-                  <caret line="26" column="13" lean-forward="true" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
+                <state relative-caret-position="126">
+                  <caret line="89" column="27" lean-forward="true" selection-start-line="89" selection-start-column="27" selection-end-line="89" selection-end-column="27" />
                   <folding>
                     <element signature="e#0#26#0" expanded="true" />
                   </folding>
@@ -73,8 +73,8 @@
           <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/components/TabsMain/index.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="189">
-                  <caret line="12" column="44" lean-forward="false" selection-start-line="12" selection-start-column="44" selection-end-line="12" selection-end-column="44" />
+                <state relative-caret-position="243">
+                  <caret line="29" column="97" lean-forward="true" selection-start-line="29" selection-start-column="97" selection-end-line="29" selection-end-column="97" />
                   <folding />
                 </state>
               </provider>
@@ -177,8 +177,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>MainForm</find>
-      <find>Button</find>
       <find>date</find>
       <find>dateChangeImg</find>
       <find>cons</find>
@@ -207,6 +205,8 @@
       <find>console.lo</find>
       <find>tabContent</find>
       <find>nsole.lo</find>
+      <find>TabPanel</find>
+      <find>it-ways__half</find>
     </findStrings>
     <replaceStrings>
       <replace>Date</replace>
@@ -243,8 +243,8 @@
         <option value="$PROJECT_DIR$/src/components/Tabs/Tab/index.js" />
         <option value="$PROJECT_DIR$/src/components/Tabs/index.js" />
         <option value="$PROJECT_DIR$/../react-tabs-master/src/index.js" />
-        <option value="$PROJECT_DIR$/src/components/MainPage/index.js" />
         <option value="$PROJECT_DIR$/src/components/TabsMain/index.js" />
+        <option value="$PROJECT_DIR$/src/components/MainPage/index.js" />
       </list>
     </option>
   </component>
@@ -660,7 +660,7 @@
       <workItem from="1548300492982" duration="196000" />
       <workItem from="1548646910911" duration="1366000" />
       <workItem from="1548821158676" duration="10234000" />
-      <workItem from="1549251213411" duration="24083000" />
+      <workItem from="1549251213411" duration="27196000" />
     </task>
     <task id="LOCAL-00001" summary="add options">
       <created>1545887875487</created>
@@ -694,7 +694,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="152817000" />
+    <option name="totallyTimeSpent" value="155930000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -714,6 +714,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32936078" sideWeight="0.10714286" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
@@ -725,7 +726,6 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
@@ -744,15 +744,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/components/TabsMain/index.js</url>
-          <line>21</line>
-          <properties />
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-      </breakpoints>
-      <option name="time" value="7" />
+      <option name="time" value="19" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1002,21 +994,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/MainPage/index.js">
+    <entry file="file://$PROJECT_DIR$/src/components/TabsMain/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="26" column="13" lean-forward="true" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="243">
+          <caret line="29" column="97" lean-forward="true" selection-start-line="29" selection-start-column="97" selection-end-line="29" selection-end-column="97" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/TabsMain/index.js">
+    <entry file="file://$PROJECT_DIR$/src/components/MainPage/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="12" column="44" lean-forward="false" selection-start-line="12" selection-start-column="44" selection-end-line="12" selection-end-column="44" />
-          <folding />
+        <state relative-caret-position="126">
+          <caret line="89" column="27" lean-forward="true" selection-start-line="89" selection-start-column="27" selection-end-line="89" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
