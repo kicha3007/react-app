@@ -7,12 +7,12 @@ class TabsMain extends Component {
 
     render() {
 
-        const tabsNavTitle = this.props.titlehead.map(function(indx, item) {
+        const tabsNavTitle = this.props.titlehead.map(function(item, indx) {
+            console.log(indx);
 
-
-            const innerTabContentItem = item.tabContent.map(function(){
+            const innerTabContentItem = item.tabContent.map(function(innerItem){
                 return (
-                    <li className="it-ways__item" key={item.id}>
+                    <li className="it-ways__item" key={innerItem.id}>
                         <a className="it-ways__half it-ways__half--left" href="#">
                             <div className="it-ways__img-box">
                                 <img className="it-ways__img" src="static/img/rbk/ways/content/3.jpg" alt=""/>
@@ -60,19 +60,13 @@ class TabsMain extends Component {
 
             })
 
-
-
             return (
-
                 <div>
-
+               
 
                     <Tab>
                     {item.title}
                     </Tab>
-                    {if(indx == 0) {
-                       df
-                        }}
                     <TabPanel>
              { innerTabContentItem}
                     </TabPanel>
