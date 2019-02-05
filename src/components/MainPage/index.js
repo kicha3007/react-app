@@ -26,6 +26,7 @@ const MainPageContent = styled.div`
 
 const DataTabs = [
     {
+        id: "1",
         title: "Куда угодно",
         tabContent: [
                 {
@@ -82,6 +83,7 @@ const DataTabs = [
     },
 
     {
+        id: "2",
         title: "CОЛНЦЕ И МОРЕ",
         tabContent: [
             {

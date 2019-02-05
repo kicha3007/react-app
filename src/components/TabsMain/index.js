@@ -8,8 +8,9 @@ class TabsMain extends Component {
     render() {
 
         const tabsNavTitle = this.props.titlehead.map(function(item, indx) {
+            console.log(item.id);
             return (
-                    <Tab>
+                    <Tab >
                         {item.title}
                     </Tab>
             )
