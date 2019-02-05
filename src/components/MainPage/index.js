@@ -29,6 +29,7 @@ const DataTabs = [
         title: "Куда угодно",
         tabContent: [
                 {
+                    id: "1",
                     img: "../Tabs/img/content/1.jpg'",
                     city: "Краснодар",
                     country: "Россия",
@@ -36,6 +37,7 @@ const DataTabs = [
                     date: "18 марта"
                 },
                 {
+                    id: "2",
                     img: "../Tabs/img/content/2.jpg'",
                     city: "Сочи (Адлер)",
                     country: "Россия",
@@ -43,6 +45,7 @@ const DataTabs = [
                     date: "18 марта"
                 },
                 {
+                    id: "3",
                     img: "../Tabs/img/content/3.jpg'",
                     city: "Санкт-Петербург",
                     country: "Россия",
@@ -50,6 +53,7 @@ const DataTabs = [
                     date: "18 марта"
                 },
                 {
+                    id: "4",
                     img: "../Tabs/img/content/4.jpg'",
                     city: "Минеральные Воды",
                     country: "Россия",
@@ -57,6 +61,7 @@ const DataTabs = [
                     date: "18 марта"
                 },
                 {
+                    id: "5",
                     img: "../Tabs/img/content/5.jpg'",
                     city: "Симферополь (Крым)",
                     country: "Россия",
@@ -64,6 +69,7 @@ const DataTabs = [
                     date: "13 марта"
                 },
                 {
+                    id: "6",
                     img: "../Tabs/img/content/6.jpg'",
                     city: "Барселона",
                     country: "ИСПАНИЯ",
@@ -79,6 +85,7 @@ const DataTabs = [
         title: "CОЛНЦЕ И МОРЕ",
         tabContent: [
             {
+                id: "7",
                 img: "../Tabs/img/content/7.jpg'",
                 city: "Краснодар",
                 country: "Россия",
@@ -86,6 +93,7 @@ const DataTabs = [
                 date: "18 марта"
             },
             {
+                id: "8",
                 img: "../Tabs/img/content/8.jpg'",
                 city: "Сочи (Адлер)",
                 country: "Россия",
@@ -93,6 +101,7 @@ const DataTabs = [
                 date: "18 марта"
             },
             {
+                id: "9",
                 img: "../Tabs/img/content/9.jpg'",
                 city: "Санкт-Петербург",
                 country: "Россия",
@@ -100,6 +109,7 @@ const DataTabs = [
                 date: "18 марта"
             },
             {
+                id: "10",
                 img: "../Tabs/img/content/10.jpg'",
                 city: "Минеральные Воды",
                 country: "Россия",
@@ -107,6 +117,7 @@ const DataTabs = [
                 date: "18 марта"
             },
             {
+                id: "11",
                 img: "../Tabs/img/content/11.jpg'",
                 city: "Симферополь (Крым)",
                 country: "Россия",
@@ -114,6 +125,7 @@ const DataTabs = [
                 date: "13 марта"
             },
             {
+                id: "12",
                 img: "../Tabs/img/content/12.jpg'",
                 city: "Барселона",
                 country: "ИСПАНИЯ",
@@ -127,7 +139,7 @@ const DataTabs = [
 ]
 
 
-
+{console.log(DataTabs[1].tabContent)}
 class MainPage extends React.Component {
 
     render () {
@@ -136,7 +148,7 @@ class MainPage extends React.Component {
             <MainPageWrapper>
                 <MainPageContent>
                     <MainForm/>
-                    <Tabs titlehead={DataTabs}/>
+                    <Tabs titlehead={DataTabs} />
                 </MainPageContent>
             </MainPageWrapper>
         )

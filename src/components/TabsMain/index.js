@@ -7,11 +7,12 @@ class TabsMain extends Component {
 
     render() {
 
-        const tabsNavTitle = this.props.titlehead.map(function(item) {
+        const tabsNavTitle = this.props.titlehead.map(function(indx, item) {
 
-        this.tabContentItem() =  item.tabContent.map(function(innerItem){
-            return (
-                <li className="it-ways__item">
+
+            const innerTabContentItem = item.tabContent.map(function(){
+                return (
+                    <li className="it-ways__item" key={item.id}>
                         <a className="it-ways__half it-ways__half--left" href="#">
                             <div className="it-ways__img-box">
                                 <img className="it-ways__img" src="static/img/rbk/ways/content/3.jpg" alt=""/>
@@ -31,7 +32,7 @@ class TabsMain extends Component {
                                         <span className="it-ways__bottom-price-text">	Найти от</span>
                                         <div className="it-ways__bottom-price-inner-wrap"><span className="it-ways__bottom-price-number">	1 212</span>
                                             <span className="it-ways__bottom-price-text">
-                                                &#8381</span></div>
+                                            &#8381</span></div>
                                     </div>
                                     <div className="it-ways__bottom-date">	18 марта</div>
                                 </div>
@@ -54,31 +55,39 @@ class TabsMain extends Component {
                                 <div className="it-ways__bottom-date">   27 марта</div>
                             </div>
                         </div></a>
-                        </li>
-                    )
+                    </li>
+                )
 
-            });
+            })
+
 
 
             return (
+
+                <div>
+
+
                     <Tab>
                     {item.title}
                     </Tab>
-            )
+                    {if(indx == 0) {
+                       df
+                        }}
+                    <TabPanel>
+             { innerTabContentItem}
+                    </TabPanel>
+
+                </div>
+                )
         });
 
 
 
 
         return (
-            <Tabs>
-                <TabList>
-                    {tabsNavTitle}
-                </TabList>
-                <TabPanel>
-                    {tabContentItem}
-                </TabPanel>
+              <Tabs>
 
+                {tabsNavTitle}
 
             </Tabs>
             )
